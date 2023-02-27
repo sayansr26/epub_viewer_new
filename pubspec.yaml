@@ -1,0 +1,28 @@
+name: epub_viewer_new
+description:
+  'epub_viewer is an epub ebook reader that encapsulates the folioreader framework.'
+version: 0.0.1
+homepage: https://github.com/sayansr26/epub_viewer_new
+
+environment:
+  sdk: '>=2.19.2 <3.0.0'
+  flutter: ">=3.7.5"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  path_provider: ^2.0.13
+  path: ^1.8.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.webduniya.epub_viewer_new
+        pluginClass: EpubViewerPlugin
+      ios:
+        pluginClass: EpubViewerPlugin
